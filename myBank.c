@@ -21,7 +21,7 @@ void popened()
          if(a==1)
          {
              int b = BankAccount[loop][1];
-             printf("\n account %d have just %d \n",(loop+901),b);
+             printf("\n The balance of account number %d is: %d \n",(loop+901),b);
          }
         
      
@@ -35,7 +35,8 @@ I - add interest money to the acount.
 */
 void addprime()
 {
-    
+    printf("how much prime to add:");
+    scanf("%lf", &amo);
     int loop;
        for(loop = 0; loop < 50; loop++)
     {
@@ -44,14 +45,14 @@ void addprime()
             if(a==1)
             {
                 double b = BankAccount[loop][1];
-                double c = b*1.1;
+                double c = b*((100+amo)/100);
                 BankAccount[loop][1]= c;
             }
            
         
     }
     
-    printf("\n all account have 101%% \n");
+    printf("\n all account multiply %f",((100+amo)/100));
     
 }
 
@@ -85,17 +86,17 @@ C - close the acount.
 */
 void CloseAcount(int number)
 {
-   
-    if(BankAccount[(number-901)][0]==1.0)
-    {
-        int a = number-901;
-        BankAccount[a][0]=0.0;
-        BankAccount[a][1]=0.0;
-        printf("\n The account closed succesfuly. \n");
+           int a = number-901;
+           if (BankAccount[a][0] == 1)
+           {
+               BankAccount[a][0] = 0;
+               BankAccount[a][1] = 0;
+               printf("\n The account closed succesfuly. \n");
     }
     else
     {
         printf("\n this account doesnt exists. \n");
+          printf("a - %d", a);
     }
     
     
@@ -146,13 +147,15 @@ void TakeMoney (int number, double amount)
  */
 void CeckAccount (int number)
 {
-    if(BankAccount[(number-901)][0]==1)
+    printf("account - %d", number);
+    if (BankAccount[(number - 901)][0] == 1)
     {
-        double balance = BankAccount[number-901][1];
+                    double balance = BankAccount[number-901][1];
         printf("\n ammount in account is - %lf \n",balance);
     }
     else
     {
+        printf("number- %d",(number-901));
         printf("\n Account doesnt exists \n");
     }
     
@@ -169,13 +172,10 @@ void AddMoney (int number, double amount)
     {
         if(amount<0)
         {
-            printf("\n the amount is in minus so fix it! \n");
-            printf("give us new value to despit:");
-            scanf("%lf", &amo);
-            AddMoney(number,amo);
-            fflush(stdin);
+            printf("Invalid Amount \n");
+      
             
-        }
+                }
         else
         {
             double balance = BankAccount[number-901][1];
@@ -204,31 +204,39 @@ O - open new account.
 void OpenAccount()
 {
     int opn;
-    int chk=0;
-    for(opn = 0; opn < 50; opn++)
- {
-     if(BankAccount[opn][0]==0)
-     {
-         BankAccount[opn][0]=1;
-         int ac = (opn+901);
-         printf("\n the account %d opened, succesfuly. \n",ac);
-         printf("How much to despoit??????");
-         scanf("%lf", &amo);
-         AddMoney(ac,amo);
-         fflush(stdin);
-         chk=1;
-         break;
-     }
-     
- }
-    if(chk==0)
+    for (opn = 0; opn < 50; opn++)
     {
-        printf("All accounts are catched");
-    }
-    
-   
-    
-   
-          
+        if (BankAccount[opn][0] == 0)
+        {
+            printf("Please enter amount for deposit: ");
+            if(scanf("%lf", &amo)!=0)
+            {
+ if (amo < 0)
+            {
+                printf("Invalid Amount \n");
+                break;
+            }
+            else
+            {
+                BankAccount[opn][0] = 1;
+                double balance = BankAccount[opn][1];
+                BankAccount[opn][1] = (balance + amo);
+                printf("New account number is: %d \n", (opn + 901));
+                break;
+            }
 
+            }
+            else
+            {
+                printf("Failed to read the amount \n");
+                break;
+            }
+            
+           
+
+
+      }
+   }
+
+     
 }

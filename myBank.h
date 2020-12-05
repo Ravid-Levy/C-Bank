@@ -8,8 +8,6 @@ void CloseAcount(int number);
 void TakeMoney (int number, double amount);
 void CeckAccount (int number);
 void AddMoney (int number, double amount);
-void OpenAccount(int number);
-
-
+void OpenAccount();
 
 #endif
