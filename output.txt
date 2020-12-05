@@ -1,6 +1,6 @@
 
 Please choose a transaction type: 
- O-Open Account.
+ O-Open Account
  B-Balance Inquiry
  D-Deposit
  W-Withdrawal
@@ -11,7 +11,7 @@ Please choose a transaction type:
 Please enter amount for deposit: Invalid Amount 
 
 Please choose a transaction type: 
- O-Open Account.
+ O-Open Account
  B-Balance Inquiry
  D-Deposit
  W-Withdrawal
@@ -22,7 +22,7 @@ Please choose a transaction type:
 Please enter amount for deposit: Failed to read the amount 
 
 Please choose a transaction type: 
- O-Open Account.
+ O-Open Account
  B-Balance Inquiry
  D-Deposit
  W-Withdrawal
@@ -30,10 +30,10 @@ Please choose a transaction type:
  I-Interest
  P-Print
  E-Exit
-Invalid transaction type 
+ Invalid transaction type 
 
 Please choose a transaction type: 
- O-Open Account.
+ O-Open Account
  B-Balance Inquiry
  D-Deposit
  W-Withdrawal
@@ -44,7 +44,7 @@ Please choose a transaction type:
 Please enter amount for deposit: New account number is: 901 
 
 Please choose a transaction type: 
- O-Open Account.
+ O-Open Account
  B-Balance Inquiry
  D-Deposit
  W-Withdrawal
@@ -52,12 +52,10 @@ Please choose a transaction type:
  I-Interest
  P-Print
  E-Exit
-
- Enter the number of the bank acount:account - 902number- 1
- Account doesnt exists 
+Please enter account number: This account is closed 
 
 Please choose a transaction type: 
- O-Open Account.
+ O-Open Account
  B-Balance Inquiry
  D-Deposit
  W-Withdrawal
@@ -65,12 +63,10 @@ Please choose a transaction type:
  I-Interest
  P-Print
  E-Exit
-
- Enter the number of the bank acount:account - 902number- 1
- Account doesnt exists 
+Please enter account number: Failed to read the account number 
 
 Please choose a transaction type: 
- O-Open Account.
+ O-Open Account
  B-Balance Inquiry
  D-Deposit
  W-Withdrawal
@@ -78,12 +74,10 @@ Please choose a transaction type:
  I-Interest
  P-Print
  E-Exit
-
- Enter the number of the bank acount:account - 901
- ammount in account is - 100.000000 
+Please enter account number:The balance of account number 901 is: 100.000000 
 
 Please choose a transaction type: 
- O-Open Account.
+ O-Open Account
  B-Balance Inquiry
  D-Deposit
  W-Withdrawal
@@ -91,12 +85,10 @@ Please choose a transaction type:
  I-Interest
  P-Print
  E-Exit
+Please enter account number: This account is closed 
 
- Enter the number of the bank acount:
- How much to despoit?????? 
-/n Account doesnt exists /n
 Please choose a transaction type: 
- O-Open Account.
+ O-Open Account
  B-Balance Inquiry
  D-Deposit
  W-Withdrawal
@@ -104,12 +96,10 @@ Please choose a transaction type:
  I-Interest
  P-Print
  E-Exit
-
- Enter the number of the bank acount:
- please enter number between 901-950. the operation cancelled by the system. 
+Please enter account number: Invalid account number 
 
 Please choose a transaction type: 
- O-Open Account.
+ O-Open Account
  B-Balance Inquiry
  D-Deposit
  W-Withdrawal
@@ -117,12 +107,10 @@ Please choose a transaction type:
  I-Interest
  P-Print
  E-Exit
-
- Enter the number of the bank acount:
- please enter number between 901-950. the operation cancelled by the system. 
+Please enter account number: Failed to read the account number 
 
 Please choose a transaction type: 
- O-Open Account.
+ O-Open Account
  B-Balance Inquiry
  D-Deposit
  W-Withdrawal
@@ -130,13 +118,9 @@ Please choose a transaction type:
  I-Interest
  P-Print
  E-Exit
-
- Enter the number of the bank acount:
- How much to despoit?????? 
-Invalid Amount 
-
+Please enter account number: Please enter the amount to deposit: Cannot deposit a negative amount
 Please choose a transaction type: 
- O-Open Account.
+ O-Open Account
  B-Balance Inquiry
  D-Deposit
  W-Withdrawal
@@ -144,13 +128,10 @@ Please choose a transaction type:
  I-Interest
  P-Print
  E-Exit
-
- Enter the number of the bank acount:
- How much to despoit?????? 
-Invalid Amount 
+Please enter account number: Please enter the amount to deposit: Failed to read the amount
 
 Please choose a transaction type: 
- O-Open Account.
+ O-Open Account
  B-Balance Inquiry
  D-Deposit
  W-Withdrawal
@@ -158,12 +139,10 @@ Please choose a transaction type:
  I-Interest
  P-Print
  E-Exit
-
- Enter the number of the bank acount:
- please enter number between 901-950. the operation cancelled by the system. 
+Please enter account number: Invalid account number 
 
 Please choose a transaction type: 
- O-Open Account.
+ O-Open Account
  B-Balance Inquiry
  D-Deposit
  W-Withdrawal
@@ -171,16 +150,9 @@ Please choose a transaction type:
  I-Interest
  P-Print
  E-Exit
-
- Enter the number of the bank acount:
- How much to despoit?????? 
-
- old ammount in account is - 100.000000 
-
- new ammount in account is - 250.000000 
-
+Please enter account number: Please enter the amount to deposit: The new balance is: 250.000000
 Please choose a transaction type: 
- O-Open Account.
+ O-Open Account
  B-Balance Inquiry
  D-Deposit
  W-Withdrawal
@@ -188,13 +160,10 @@ Please choose a transaction type:
  I-Interest
  P-Print
  E-Exit
-Please enter account number: 
-lease enter the amount to withdraw: The new balance is: 
-
- Account doesnt exists or you dont have money. 
+Please enter account number: This account is closed 
 
 Please choose a transaction type: 
- O-Open Account.
+ O-Open Account
  B-Balance Inquiry
  D-Deposit
  W-Withdrawal
@@ -202,13 +171,10 @@ Please choose a transaction type:
  I-Interest
  P-Print
  E-Exit
-Please enter account number: 
-lease enter the amount to withdraw: The new balance is: 
-
- Account doesnt exists or you dont have money. 
+Please enter account number: Failed to read the account number 
 
 Please choose a transaction type: 
- O-Open Account.
+ O-Open Account
  B-Balance Inquiry
  D-Deposit
  W-Withdrawal
@@ -216,13 +182,11 @@ Please choose a transaction type:
  I-Interest
  P-Print
  E-Exit
-Please enter account number: 
-lease enter the amount to withdraw: The new balance is: 
-
- the amount is in minus so fix it! 
+Please enter account number:
+ please enter the amount to withdraw:Cannot deposit a negative amount 
 
 Please choose a transaction type: 
- O-Open Account.
+ O-Open Account
  B-Balance Inquiry
  D-Deposit
  W-Withdrawal
@@ -230,38 +194,10 @@ Please choose a transaction type:
  I-Interest
  P-Print
  E-Exit
-
-Account number?: 
- this account doesnt exists. 
-a - 1
-Please choose a transaction type: 
- O-Open Account.
- B-Balance Inquiry
- D-Deposit
- W-Withdrawal
- C-Close Account
- I-Interest
- P-Print
- E-Exit
-
-Account number?: 
- this account doesnt exists. 
-a - 1
-Please choose a transaction type: 
- O-Open Account.
- B-Balance Inquiry
- D-Deposit
- W-Withdrawal
- C-Close Account
- I-Interest
- P-Print
- E-Exit
-
-Account number?: 
- The account closed succesfuly. 
+Please enter account number: This account is already closed 
 
 Please choose a transaction type: 
- O-Open Account.
+ O-Open Account
  B-Balance Inquiry
  D-Deposit
  W-Withdrawal
@@ -269,12 +205,10 @@ Please choose a transaction type:
  I-Interest
  P-Print
  E-Exit
+Please enter account number: Failed to read the account number 
 
- Enter the number of the bank acount:
- How much to despoit?????? 
-/n Account doesnt exists /n
 Please choose a transaction type: 
- O-Open Account.
+ O-Open Account
  B-Balance Inquiry
  D-Deposit
  W-Withdrawal
@@ -282,10 +216,10 @@ Please choose a transaction type:
  I-Interest
  P-Print
  E-Exit
-how much prime to add:
- all account multiply 0.900000
+Please enter account number: Closed account number 901 
+
 Please choose a transaction type: 
- O-Open Account.
+ O-Open Account
  B-Balance Inquiry
  D-Deposit
  W-Withdrawal
@@ -293,10 +227,10 @@ Please choose a transaction type:
  I-Interest
  P-Print
  E-Exit
-how much prime to add:
- all account multiply 0.900000
+Please enter account number: This account is closed 
+
 Please choose a transaction type: 
- O-Open Account.
+ O-Open Account
  B-Balance Inquiry
  D-Deposit
  W-Withdrawal
@@ -304,10 +238,31 @@ Please choose a transaction type:
  I-Interest
  P-Print
  E-Exit
-how much prime to add:
- all account multiply 1.100000
+Please enter interest rate: Invalid interest rate 
+
 Please choose a transaction type: 
- O-Open Account.
+ O-Open Account
+ B-Balance Inquiry
+ D-Deposit
+ W-Withdrawal
+ C-Close Account
+ I-Interest
+ P-Print
+ E-Exit
+Please enter interest rate: Failed to read the interest rate
+
+Please choose a transaction type: 
+ O-Open Account
+ B-Balance Inquiry
+ D-Deposit
+ W-Withdrawal
+ C-Close Account
+ I-Interest
+ P-Print
+ E-Exit
+Please enter interest rate: 
+Please choose a transaction type: 
+ O-Open Account
  B-Balance Inquiry
  D-Deposit
  W-Withdrawal
@@ -317,7 +272,7 @@ Please choose a transaction type:
  E-Exit
 
 Please choose a transaction type: 
- O-Open Account.
+ O-Open Account
  B-Balance Inquiry
  D-Deposit
  W-Withdrawal
@@ -328,7 +283,7 @@ Please choose a transaction type:
 Please enter amount for deposit: New account number is: 901 
 
 Please choose a transaction type: 
- O-Open Account.
+ O-Open Account
  B-Balance Inquiry
  D-Deposit
  W-Withdrawal
@@ -337,10 +292,9 @@ Please choose a transaction type:
  P-Print
  E-Exit
 
- The balance of account number 901 is: 500 
-
+ The balance of account number 901 is: 500.000000
 Please choose a transaction type: 
- O-Open Account.
+ O-Open Account
  B-Balance Inquiry
  D-Deposit
  W-Withdrawal
@@ -348,7 +302,3 @@ Please choose a transaction type:
  I-Interest
  P-Print
  E-Exit
-
- 
-
- All accounts are closed! 

@@ -4,16 +4,11 @@
 #include <stdbool.h>
 #include "myBank.h"
 
-bool checkint(double val)
-{
-    int valint = (int)val;
-    return (val == valint);
-}
+
 
 int main(){
     char x;
     int account;
-    double acc;
     double amount;
     /*
      rows: number of the bank account, activ/disactive acount, anount of money in the account, interest of the acount.
@@ -23,7 +18,7 @@ int main(){
     {
         
         printf("\nPlease choose a transaction type: \n");
-        printf(" O-Open Account.\n");
+        printf(" O-Open Account\n");
         printf(" B-Balance Inquiry\n");
         printf(" D-Deposit\n");
         printf(" W-Withdrawal\n");
@@ -34,7 +29,6 @@ int main(){
         scanf("%c", &x);
         switch (x) {
             case 'E':
-                printf("\n \n");
                 closeall();
                 exit(0);
                 break;
@@ -45,21 +39,16 @@ int main(){
                 addprime();
                 break;
             case 'C':
-                printf("\nAccount number?: ");
-                scanf("%lf", &acc);
-                
-                if(checkint(acc)==true)
+                  printf("Please enter account number:");
+              
+                if(  scanf("%d", &account)==0)
                 {
-                    account = acc;
-                }
-                else
-                {
-                    printf("Transaction type?: ");
+                    printf(" Failed to read the account number \n");
                     continue;
                 }
-                if(account>950 || account<901)
+              if(account>950 || account<901)
                 {
-                    printf("\n Account number?: \n");
+                    printf(" Invalid account number \n");
                     continue;
                 }
                 else
@@ -68,71 +57,50 @@ int main(){
                 }
                 break;
             case 'W':
-                
-                printf("Please enter account number: ");
-                scanf("%lf", &acc);
-                
-                if(checkint(acc)==true)
+                printf("Please enter account number:");
+                if(  scanf("%d", &account)==0)
                 {
-                    account = acc;
-                }
-                else
-                {
-                    printf("The number is not valid. Operation Cancelled by system");
+                    printf(" Failed to read the account number \n");
                     continue;
                 }
                 if(account>950 || account<901)
                 {
-                    printf("\n please enter number between 901-950. the operation cancelled by the system. \n");
+                    printf(" Invalid account number \n");
                     continue;
                 }
                 else
                 {
-                    printf("\nlease enter the amount to withdraw: The new balance is: \n");
-                    scanf("%lf", &amount);
-                    TakeMoney(account,amount);
+                    TakeMoney(account);
 
                 }
                 break;
             case 'D':
-                printf("\n Enter the number of the bank acount:");
-                scanf("%lf", &acc);
-                if(checkint(acc)==true)
+              printf("Please enter account number:");
+                if(  scanf("%d", &account)==0)
                 {
-                    account = acc;
-                }
-                else
-                {
-                    printf("The number is not valid. Operation Cancelled by system");
+                    printf(" Failed to read the account number \n");
                     continue;
                 }
-                if(account>950 || account<901)
+               if(account>950 || account<901)
                 {
-                    printf("\n please enter number between 901-950. the operation cancelled by the system. \n");
+                    printf(" Invalid account number \n");
                     continue;
                 }
                 else
                 {
-                    printf("\n How much to despoit?????? \n");
-                    scanf("%lf", &amount);
-                    AddMoney(account,amount);
+                    AddMoney(account);
                 }
                 break;
             case 'B':
-                printf("\n Enter the number of the bank acount:");
-                scanf("%lf", &acc);
-                if(checkint(acc)==true)
+                printf("Please enter account number:");
+                if(  scanf("%d", &account)==0)
                 {
-                    account = acc;
-                }
-                else
-                {
-                    printf("The number is not valid. Operation Cancelled by system");
+                    printf(" Failed to read the account number \n");
                     continue;
                 }
-                if(account>950 || account<901)
+                 if(account>950 || account<901)
                 {
-                    printf("\n please enter number between 901-950. the operation cancelled by the system. \n");
+                    printf(" Invalid account number \n");
                     continue;
                 }
                 else
@@ -144,7 +112,7 @@ int main(){
                     OpenAccount();
                     break;
             default:
-                printf("Invalid transaction type \n");
+                printf(" Invalid transaction type \n");
                 break;
         }
         

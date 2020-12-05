@@ -119,7 +119,6 @@ Please choose a transaction type:
  P-Print
  E-Exit
 Please enter account number: Please enter the amount to deposit: Cannot deposit a negative amount
-
 Please choose a transaction type:
  O-Open Account
  B-Balance Inquiry
