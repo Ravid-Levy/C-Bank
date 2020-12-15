@@ -42,7 +42,7 @@ AddMoney (int number) - add money to account number.
 OpenAccount() - open new account and give you the account number automatically
 
 ## myBank.h
-# content
+### content
 void popened();
 <br />
 void addprime();
